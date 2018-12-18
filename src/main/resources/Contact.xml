@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contact SYSTEM "Contact.dtd">
+<?xml-stylesheet href="Contact.css" type="text/css"?>
+<!--This document contains contact details-->
+<contact>
+  <name>tito toti</name>
+  <address>zondernaamstraat 1234</address>
+  <city>Zimbabwe</city>
+  <country>India</country>
+  <phone type="mobile">0987654321</phone>
+  <notes><![CDATA[Try-hard and hipster]]></notes>
+</contact>

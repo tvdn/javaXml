@@ -4,6 +4,6 @@
 <!ELEMENT city (#PCDATA)>
 <!ELEMENT country (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
-<!ATTLIST phone type(mobile|home|work) #REQUIRED>
+<!ATTLIST phone type (mobile|home|work) #REQUIRED>
 <!ELEMENT notes (#PCDATA)>
 

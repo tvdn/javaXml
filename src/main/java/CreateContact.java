@@ -1,6 +1,11 @@
 import org.jdom2.*;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 import javax.swing.text.html.StyleSheet;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -49,5 +54,15 @@ public class CreateContact {
         contact.addContent(notes);
 
         CreateMessage.printDoc(doc);
+        saveDoc(doc);
+    }
+
+    public static void saveDoc(Document doc) throws IOException {
+        FileWriter fileWriter = new FileWriter("src/main/resources/Contact.xml");
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+
+        XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
+        out.output(doc, bufferedWriter);
+
     }
 }
