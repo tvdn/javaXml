@@ -1,0 +1,7 @@
+<!ELEMENT message (greeting,audience,footer) >
+<!ATTLIST message language CDATA #IMPLIED>
+<!ELEMENT greeting (#PCDATA)>
+<!ELEMENT audience (#PCDATA)>
+<!ELEMENT footer (#PCDATA)>
+<!ENTITY cr "Copyright 2018 tvdn">
+
